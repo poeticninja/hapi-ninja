@@ -1,0 +1,28 @@
+{
+  "name": "hapi-ninja",
+  "description": "Node.js, Hapi, Swig, and more. Boilerplate client and server side stack.",
+  "version": "0.0.1",
+  "author": "Saul Maddox",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/poeticninja/hapi-ninja.git"
+  },
+  "main": "server.js",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "postinstall": "bower install"
+  },
+  "dependencies": {
+    "hapi": "~1.20.0",
+    "good": "~0.12.3",
+    "lout": "~0.5.0",
+    "swig": "~1.2.2",
+    "handlebars": "~1.1.2",
+    "bower": "1.2.x",
+    "require-directory": "~1.2.0"
+  }
+}
