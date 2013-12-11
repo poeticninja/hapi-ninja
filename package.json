@@ -23,6 +23,7 @@
     "swig": "~1.2.2",
     "handlebars": "~1.1.2",
     "bower": "1.2.x",
-    "require-directory": "~1.2.0"
+    "require-directory": "~1.2.0",
+    "hapi-named-routes": "0.0.2"
   }
 }
