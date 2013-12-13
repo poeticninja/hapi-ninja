@@ -1,10 +1,15 @@
 <html>
-    <head><title>{{title}}</title></head>
+    <head>
+        <title>{{title}}</title>
+        <meta name="description" content="{{metaDescription}}">
+    </head>
     <body>
-    {{title}}
-    and other stuff. <br>
-    more {{title}}<br>
-    {{path.about}} is silly!
-
+        <ul>
+            <li><a href="{{path.index}}">Home</a></li>
+            <li><a href="{{path.about}}">About</a></li>
+            <li><a href="{{path.info}}">Info</a></li>
+        </ul>
+        <h1>{{title}}</h1>
+        <p>This is an about page. Have a look around.</p>
     </body>
 </html>

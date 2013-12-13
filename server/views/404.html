@@ -1,3 +1,15 @@
-<h1>{{title}}</h1>
-
-<p>Looks like you got a 404!</p>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <meta name="description" content="{{metaDescription}}">
+    </head>
+    <body>
+        <ul>
+            <li><a href="{{path.index}}">Home</a></li>
+            <li><a href="{{path.about}}">About</a></li>
+            <li><a href="{{path.info}}">Info</a></li>
+        </ul>
+        <h1>{{title}}</h1>
+        <p>Looks like you got a 404!</p>
+    </body>
+</html>

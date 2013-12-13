@@ -16,17 +16,6 @@ module.exports = {
                     html: 'handlebars'
                 }
             }
-        },
-        logging : {
-            subscribers: {
-                console: ['ops', 'request', 'log', 'error'],
-                'tmp/logs/': ['ops', 'request', 'log', 'error']
-            },
-            leakDection: true,
-            extendedRequests: true
-        },
-        docs: {
-            endpoints: '/docs'
         }
     }
 }
