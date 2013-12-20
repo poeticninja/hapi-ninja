@@ -1,4 +1,4 @@
-// The title being passed through can be access by the template {{title}}.
+// This is the assets controller. Goal is to serve css, js, partials, images, or bower packages.
 module.exports = {
     partials: {
         handler: {

@@ -1,15 +1,13 @@
+/**
+* Dependencies.
+*/
 var requireDirectory = require('require-directory');
 
-// Bootstrap your controllers so you dont have to load them individually. This loads them all into the controller name space.
+// Bootstrap your controllers so you dont have to load them individually. This loads them all into the controller name space. https://github.com/troygoode/node-require-directory
 var controller = requireDirectory(module, './server/controllers');
 
 // Array of routes for Hapi
 module.exports = [
-    {
-        method: 'GET',
-        path: '/info',
-        config: controller.base.info
-    },
     {
         method: 'GET',
         path: '/about',

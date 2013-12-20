@@ -1,3 +1,4 @@
+// Options to pass into the 'Good' plugin
 var goodOptions = {
     subscribers: {
         console: ['ops', 'request', 'log', 'error'],
@@ -5,16 +6,15 @@ var goodOptions = {
     }
 };
 
-
-// Setup the Hapi plugin 'Good' for logging.
+// Require the Hapi plugin 'Good' for logging. You can access your logs in the tmp/logs directory. https://github.com/spumko/good
 server.pack.require('good', goodOptions, function (err) {
     if(err){
         console.log('Failed loading plugin good');
     }
 });
 
-// Setup the Hapi plugin 'Hapi Named Routes' to allow route names in the view templates.
-server.pack.require('hapi-named-routes', function(){
+// Require the Hapi plugin 'Hapi Named Routes' to allow route names in the view templates. https://github.com/poeticninja/hapi-named-routes
+server.pack.require('hapi-named-routes', function(err){
     if(err){
         console.log('Failed loading plugin hapi-named-routes');
     }
