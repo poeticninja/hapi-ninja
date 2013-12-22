@@ -1,7 +1,7 @@
 {
   "name": "hapi-ninja",
   "description": "Boilerplate Hapi server example. Node.js, Hapi, and Swig.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Saul Maddox",
   "private": false,
   "repository": {
