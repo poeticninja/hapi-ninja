@@ -1,3 +1,5 @@
 {% block foot %}
-    <script src="js/scripts.js"></script>
+    {% for item in assets.js %}
+        <script src="{{item}}{{version.cache}}"></script>
+    {% endfor %}
 {% endblock %}

@@ -18,6 +18,8 @@ Create a base boilerplate example showing how easy it is to get started with Hap
 
 **CSS Framework** - None. Choose your own CSS preprocessor and CSS framework.
 
+**Gulp** - A task runner for your assets, and can do a lot more. The performance is amazing and it is easy to get started. [http://gulpjs.com/](http://gulpjs.com/)
+
 ### Requirements:
 Install Node.js by using the big install button on the [http://nodejs.org/](http://nodejs.org/) homepage.
 
@@ -44,15 +46,33 @@ $ supervisor -e html,js  server
 ```
 Now all of your server html and js files are being watched and on change the node server gets restarted automatically.
 
-### Named Routes
-One thing that I have done is added names to the routes. This allows you to have access to the path in the templates just by using the path.nameofroute variable. [https://github.com/poeticninja/hapi-named-routes](https://github.com/poeticninja/hapi-named-routes)
+####Production
+Before going into production you will want to concatenate and minify your assets. This will increase performance for your user. We will use Gulp for this.
 
-### Folder Structure
+To install run:
+```
+npm install -g gulp
+```
+
+Now you can run `gulp` from the command line and it will run the tasks in the `gulpfile.js`. The current tasks will minify and optimize your CSS, JS, and Images. If you want more tasks you can go to the Gulp Plugin page. [http://gratimax.github.io/search-gulp-plugins/](http://gratimax.github.io/search-gulp-plugins/)
+
+## Plugins
+The Hapi plugins that are being used.
+
+#### Hapi-Named-Routes
+Added names to the routes. This allows you to have access to the path in the templates just by using the `path.nameofroute` variable. [https://github.com/poeticninja/hapi-named-routes](https://github.com/poeticninja/hapi-named-routes)
+
+#### Hapi-Assets
+Assets are in the `./assets.js` file, and your view layer has access based on the node environment. If you are in `development` (default) you might want to have individual files (js,css). If you are in `production` you would want the assets combined for user performance. [https://npmjs.org/package/hapi-assets](https://npmjs.org/package/hapi-assets)
+
+#### Hapi-Cache Buster
+Client/browser reloads new assets based on package.json version of your application. [https://npmjs.org/package/hapi-cache-buster](https://npmjs.org/package/hapi-cache-buster)
+
+#### Folder Structure
 There are two main folders in the stack. The "**public**" folder for front-end (client side) code, and "**server**" folder for server side code.
 
 By having the front-end folder and server side folder be specific, it provides for better consistency when changing projects. This way when you change from a full front-end app (Phonegap), to a front-end and server side app you get to keep the same folder structure. Allowing for better consistency with your stack, projects, and tools.
 
-This project is just getting started and will be moving very fast in a short amount of time.
 
 ## Contributers
 
@@ -61,7 +81,7 @@ You?
 
 
 ## Credits
-Credit goes to all of the source code, tutorials, and blogs that people have made available.
+Credit goes to all of the open source code that people have made available.
 
 #### License
 
