@@ -1,7 +1,7 @@
 {
   "name": "hapi-ninja",
   "description": "Boilerplate Hapi server example. Node.js, Hapi, and Swig.",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "author": "Saul Maddox",
   "private": false,
   "repository": {
@@ -17,22 +17,21 @@
     "postinstall": "bower install"
   },
   "dependencies": {
-    "hapi": "1.20.x",
-    "good": "0.12.x",
+    "hapi": "2.0.x",
+    "good": "1.0.x",
     "swig": "1.2.x",
     "bower": "1.2.x",
     "require-directory": "1.2.x",
-    "hapi-named-routes": "0.0.x",
-    "hapi-cache-buster": "0.0.x",
-    "hapi-assets": "0.0.x"
+    "hapi-named-routes": "0.1.x",
+    "hapi-cache-buster": "0.1.x",
+    "hapi-assets": "0.1.x"
   },
   "devDependencies": {
-    "gulp": "~3.2.4",
-    "gulp-load-tasks": "~0.1.1",
-    "gulp-util": "~2.2.6",
-    "gulp-concat": "~2.1.7",
-    "gulp-uglify": "~0.1.0",
-    "gulp-csso": "~0.1.6",
-    "gulp-imagemin": "~0.1.1"
+    "gulp": "~3.2.x",
+    "gulp-util": "~2.2.x",
+    "gulp-concat": "~2.1.x",
+    "gulp-uglify": "~0.1.x",
+    "gulp-minify-css": "~0.2.x",
+    "gulp-imagemin": "~0.1.x"
   }
 }

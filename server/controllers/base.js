@@ -1,9 +1,9 @@
 // This is the base controller. Used for base routes, such as the default index/root path, 404 error pages, and others.
 module.exports = {
     index: {
-        handler: function(request){
+        handler: function(request, reply){
           // Render the view with the custom greeting
-            request.reply.view('index', {
+            reply.view('index', {
                 title: 'Awesome Boiler Plate Homepage'
             });
         },
@@ -12,8 +12,8 @@ module.exports = {
         }
     },
     about: {
-        handler: function(request){
-            request.reply.view('about', {
+        handler: function(request, reply){
+            reply.view('about', {
                 title: 'This is the example about page'
             });
         },
@@ -22,8 +22,8 @@ module.exports = {
         }
     },
     missing: {
-        handler: function(request){
-            request.reply.view('404', {
+        handler: function(request, reply){
+            reply.view('404', {
                 title: 'You found a missing page, but won the 404 error!'
             });
         },
