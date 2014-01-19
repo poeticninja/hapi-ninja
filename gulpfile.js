@@ -4,7 +4,7 @@
 var gulp = require("gulp"),
     util = require('gulp-util'),
     concat = require('gulp-concat'),
-    minifyCSS = require('gulp-minify-css'),
+    minifycss = require('gulp-minify-css'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin');
 
@@ -23,7 +23,7 @@ gulp.task('default', function(){
     // concat and minify your css
     gulp.src(assets.development.css)
         .pipe(concat("styles.css"))
-        .pipe(minifyCSS())
+        .pipe(minifycss())
         .pipe(gulp.dest('./css/'));
 
     // concat and minify your js
