@@ -23,8 +23,11 @@ Create a base boilerplate example showing how easy it is to get started with Hap
 ### Requirements:
 Install Node.js by using the big install button on the [http://nodejs.org/](http://nodejs.org/) homepage.
 
-After Node.js is installed clone this repo. Go into the cloned directory and run:
-```
+After Node.js is installed, clone this repo, change `cd` to this directory, and run `npm install`
+
+```bash
+$ git clone https://github.com/poeticninja/hapi-ninja.git
+$ cd hapi-ninja
 $ npm install
 ```
 
