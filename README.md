@@ -66,10 +66,10 @@ The Hapi plugins that are being used.
 Added names to the routes. This allows you to have access to the path in the templates just by using the `path.nameofroute` variable. [https://github.com/poeticninja/hapi-named-routes](https://github.com/poeticninja/hapi-named-routes)
 
 #### Hapi-Assets
-Assets are in the `./assets.js` file, and your view layer has access based on the node environment. If you are in `development` (default) you might want to have individual files (js,css). If you are in `production` you would want the assets combined for user performance. [https://npmjs.org/package/hapi-assets](https://npmjs.org/package/hapi-assets)
+Assets are in the `./assets.js` file, and your view layer has access based on the node environment. If you are in `development` (default) you might want to have individual files (js,css). If you are in `production` you would want the assets combined for user performance. [https://github.com/poeticninja/hapi-assets](https://github.com/poeticninja/hapi-assets)
 
 #### Hapi-Cache Buster
-Client/browser reloads new assets based on package.json version of your application. [https://npmjs.org/package/hapi-cache-buster](https://npmjs.org/package/hapi-cache-buster)
+Client/browser reloads new assets based on package.json version of your application. [https://github.com/poeticninja/hapi-cache-buster](https://github.com/poeticninja/hapi-cache-buster)
 
 #### Folder Structure
 There are two main folders in the stack. The "**public**" folder for front-end (client side) code, and "**server**" folder for server side code.

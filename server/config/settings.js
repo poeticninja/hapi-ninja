@@ -13,7 +13,7 @@ module.exports = {
             views: {
                 path: './server/views',
                 engines: {
-                    html: 'swig'
+                    html: require('swig')
                 }
             }
         }
