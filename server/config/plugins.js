@@ -23,6 +23,9 @@ module.exports = function(server) {
         },
         {
             plugin: require("hapi-cache-buster")
+        },
+        {
+            plugin: require("lout")
         }
     ], function(err) {
         if (err) throw err;

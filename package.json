@@ -24,7 +24,9 @@
     "swig": "~1.3.2",
     "hapi-named-routes": "~0.2.0",
     "hapi-assets": "~0.2.0",
-    "hapi-cache-buster": "~0.2.0"
+    "hapi-cache-buster": "~0.2.0",
+    "joi": "^4.6.1",
+    "lout": "^5.0.0"
   },
   "devDependencies": {
     "gulp": "~3.8.0",
