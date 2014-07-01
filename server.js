@@ -16,7 +16,7 @@ var routes = require('./server/config/routes')(server);
 server.route(routes);
 
 //Start the server
-server.start();
-
-//Log to the console the host and port info
-console.log('Server started at: ' + server.info.uri);
+server.start(function() {
+    //Log to the console the host and port info
+    console.log('Server started at: ' + server.info.uri);    
+});
