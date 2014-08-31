@@ -2,8 +2,7 @@ module.exports = function(server) {
     // Options to pass into the 'Good' plugin
     var goodOptions = {
         subscribers: {
-            console: ['ops', 'request', 'log', 'error'],
-            'tmp/logs/': ['ops', 'request', 'log', 'error']
+            console: ['ops', 'request', 'log', 'error']
         }
     };
     // The Assets Configuaration Options

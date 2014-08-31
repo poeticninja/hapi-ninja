@@ -1,0 +1,14 @@
+{
+  "name": "hapi-ninja",
+  "version": "0.2.1",
+  "homepage": "https://github.com/poeticninja/hapi-ninja",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ]
+}
