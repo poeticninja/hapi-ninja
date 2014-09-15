@@ -4,7 +4,7 @@ module.exports = {
         handler: function(request, reply){
           // Render the view with the custom greeting
             reply.view('index', {
-                title: 'Awesome Boiler Plate Homepage'
+                title: 'Awesome Boilerplate Homepage'
             });
         },
         app: {
@@ -14,7 +14,7 @@ module.exports = {
     about: {
         handler: function(request, reply){
             reply.view('about', {
-                title: 'This is the example about page'
+                title: 'Super Informative About Page'
             });
         },
         app: {
@@ -24,7 +24,7 @@ module.exports = {
     missing: {
         handler: function(request, reply){
             reply.view('404', {
-                title: 'You found a missing page, but won the 404 error!'
+                title: 'Total Bummer 404 Page'
             }).code(404);
         },
         app: {
