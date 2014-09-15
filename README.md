@@ -47,9 +47,10 @@ To use it run:
 ```
 $ supervisor -e html,js  server
 ```
+
 Now all of your server html and js files are being watched and on change the node server gets restarted automatically.
 
-####Production
+#### Production
 Before going into production you will want to concatenate and minify your assets. This will increase performance for your user. We will use Gulp for this.
 
 To install run:
@@ -76,19 +77,16 @@ There are two main folders in the stack. The "**public**" folder for front-end (
 
 By having the front-end folder and server side folder be specific, it provides for better consistency when changing projects. This way when you change from a full front-end app (Phonegap), to a front-end and server side app you get to keep the same folder structure. Allowing for better consistency with your stack, projects, and tools.
 
-
 ## Community Projects
 
 Projects that use hapi-ninja as a base.
 
 - [Hapi Dash](https://github.com/smaxwellstewart/hapi-dash) - Boilerplate Hapi Web and API Server Example, with frontend dashboard.
 
-
 ## Contributers
 
 [Saul Maddox](https://github.com/poeticninja),
 You?
-
 
 ## Credits
 Credit goes to all of the open source code that people have made available.

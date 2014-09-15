@@ -1,7 +1,7 @@
 /**
 * Dependencies.
 */
-var gulp = require("gulp"),
+var gulp = require('gulp'),
     util = require('gulp-util'),
     concat = require('gulp-concat'),
     minifycss = require('gulp-minify-css'),
@@ -22,13 +22,13 @@ gulp.task('default', function(){
 
     // concat and minify your css
     gulp.src(assets.development.css)
-        .pipe(concat("styles.css"))
+        .pipe(concat('styles.css'))
         .pipe(minifycss())
         .pipe(gulp.dest('./css/'));
 
     // concat and minify your js
     gulp.src(assets.development.js)
-        .pipe(concat("scripts.js"))
+        .pipe(concat('scripts.js'))
         .pipe(uglify())
         .pipe(gulp.dest('./js/'));
 

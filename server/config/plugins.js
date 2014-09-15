@@ -10,18 +10,18 @@ module.exports = function(server) {
 
     server.pack.register([
         {
-            plugin: require("good"),
+            plugin: require('good'),
             options: goodOptions
         },
         {
-            plugin: require("hapi-assets"),
+            plugin: require('hapi-assets'),
             options: assetOptions
         },
         {
-            plugin: require("hapi-named-routes")
+            plugin: require('hapi-named-routes')
         },
         {
-            plugin: require("hapi-cache-buster")
+            plugin: require('hapi-cache-buster')
         }
     ], function(err) {
         if (err) throw err;
