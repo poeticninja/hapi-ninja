@@ -8,9 +8,9 @@ module.exports = {
             name: 'partials'
         }
     },
-    images: {
+    img: {
         handler: {
-            directory: { path: './public/images' }
+            directory: { path: './public/img' }
         },
         app: {
             name: 'images'
@@ -30,6 +30,14 @@ module.exports = {
         },
         app: {
             name: 'js'
+        }
+    },
+    fonts: {
+        handler: {
+            directory: { path: './public/fonts' }
+        },
+        app: {
+            name: 'fonts'
         }
     },
     bower: {

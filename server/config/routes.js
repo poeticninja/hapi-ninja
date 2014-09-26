@@ -11,13 +11,38 @@ module.exports = function(server) {
     var routeTable = [
         {
             method: 'GET',
+            path: '/',
+            config: controller.base.index
+        },
+        {
+            method: 'GET',
             path: '/about',
             config: controller.base.about
         },
         {
             method: 'GET',
-            path: '/',
-            config: controller.base.index
+            path: '/blog',
+            config: controller.base.blog
+        },
+        {
+            method: 'GET',
+            path: '/contact',
+            config: controller.base.contact
+        },
+        {
+            method: 'GET',
+            path: '/portfolio',
+            config: controller.base.portfolio
+        },
+        {
+            method: 'GET',
+            path: '/single-post',
+            config: controller.base.singlePost
+        },
+        {
+            method: 'GET',
+            path: '/single-project',
+            config: controller.base.singleProject
         },
         {
             method: 'GET',
@@ -31,8 +56,8 @@ module.exports = function(server) {
         },
         {
             method: 'GET',
-            path: '/images/{path*}',
-            config: controller.assets.images
+            path: '/img/{path*}',
+            config: controller.assets.img
         },
         {
             method: 'GET',
@@ -43,6 +68,11 @@ module.exports = function(server) {
             method: 'GET',
             path: '/js/{path*}',
             config: controller.assets.js
+        },
+        {
+            method: 'GET',
+            path: '/fonts/{path*}',
+            config: controller.assets.fonts
         },
         {
             method: 'GET',

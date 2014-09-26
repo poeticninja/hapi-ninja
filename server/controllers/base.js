@@ -4,7 +4,7 @@ module.exports = {
         handler: function(request, reply){
           // Render the view with the custom greeting
             reply.view('index', {
-                title: 'Awesome Boilerplate Homepage'
+                title: 'HAPI NINJA - Homepage'
             });
         },
         app: {
@@ -14,17 +14,67 @@ module.exports = {
     about: {
         handler: function(request, reply){
             reply.view('about', {
-                title: 'Super Informative About Page'
+                title: 'HAPI NINJA - About'
             });
         },
         app: {
             name: 'about'
         }
     },
+    blog: {
+        handler: function(request, reply){
+            reply.view('blog', {
+                title: 'HAPI NINJA - Blog'
+            });
+        },
+        app: {
+            name: 'blog'
+        }
+    },
+    contact: {
+        handler: function(request, reply){
+            reply.view('contact', {
+                title: 'HAPI NINJA - Contact'
+            });
+        },
+        app: {
+            name: 'contact'
+        }
+    },
+    portfolio: {
+        handler: function(request, reply){
+            reply.view('portfolio', {
+                title: 'HAPI NINJA - Blog'
+            });
+        },
+        app: {
+            name: 'portfolio'
+        }
+    },
+    singlePost: {
+        handler: function(request, reply){
+            reply.view('single-post', {
+                title: 'HAPI NINJA - Single Post'
+            });
+        },
+        app: {
+            name: 'singlePost'
+        }
+    },
+    singleProject: {
+        handler: function(request, reply){
+            reply.view('single-project', {
+                title: 'HAPI NINJA - Single Project'
+            });
+        },
+        app: {
+            name: 'singleProject'
+        }
+    },
     missing: {
         handler: function(request, reply){
             reply.view('404', {
-                title: 'Total Bummer 404 Page'
+                title: '404 Page'
             }).code(404);
         },
         app: {

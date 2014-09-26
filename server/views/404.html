@@ -3,11 +3,24 @@
 {% block title %}{{title}}{% endblock %}
 
 {% block content %}
-    <ul class="menu">
-        <li><a href="{{path.index}}">Home</a></li>
-        <li><a href="{{path.about}}">About</a></li>
-    </ul>
+    <!-- *****************************************************************************************************************
+	 BLUE WRAP
+	 ***************************************************************************************************************** -->
+	<div id="blue">
+	    <div class="container">
+			<div class="row">
+				<h3>Not found.</h3>
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /blue -->
+	<div class="container mtb">
+	 	<div class="row">
+	 		<div class="col-lg-12">
+		 		<h1>{{title}}</h1>
+   	 			<p>You found a missing page, 404 error!</p>
+	 		</div>
+	 	</div><! --/row -->
+	 </div><! --/container -->
 
-    <h1>{{title}}</h1>
-    <p>You found a missing page, but won the 404 error!</p>
+    
 {% endblock %}
