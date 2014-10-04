@@ -7,7 +7,7 @@ Boilerplate Hapi Web and API Server Example
 Create a base boilerplate example showing how easy it is to get started with Hapi as a web server.
 
 ## The Stack:
-**Node.js** - Because it's fast, easy to get started, and Javscript is awesome.
+**Node.js** - Because it's fast, easy to get started, and Javascript is awesome.
 [http://nodejs.org/](http://nodejs.org/)
 
 **Hapi** - A very well designed server framework that is easy to understand, easy to create your own plugins, scales very well, cache options built in, and more.
