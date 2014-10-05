@@ -77,6 +77,11 @@ There are two main folders in the stack. The "**public**" folder for front-end (
 
 By having the front-end folder and server side folder be specific, it provides for better consistency when changing projects. This way when you change from a full front-end app (Phonegap), to a front-end and server side app you get to keep the same folder structure. Allowing for better consistency with your stack, projects, and tools.
 
+## Theme
+
+This [theme](http://www.blacktie.co/2014/05/solid-multipurpose-theme/) is a 7 pages theme ideal for web agencies and freelancers. Uses Font Awesome, Masonry Javascript, PrettyPhoto lightbox and nice hover effects thanks Codrops. Theme includes the Retina.js to work nice with retina display devices. Theme by [blacktie.co](http://www.blacktie.co).
+
+
 ## Community Projects
 
 Projects that use hapi-ninja as a base.
@@ -85,7 +90,7 @@ Projects that use hapi-ninja as a base.
 
 ## Contributers
 
-[Saul Maddox](https://github.com/poeticninja),
+[Saul Maddox](https://github.com/poeticninja),[Simon Maxwell-Stewart](https://github.com/smaxwellstewrt)
 You?
 
 ## Credits
