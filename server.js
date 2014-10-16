@@ -10,13 +10,11 @@ var server = Hapi.createServer('0.0.0.0', config.port, config.hapi.options);
 // Export the server to be required elsewhere.
 module.exports = server;
 
-// Bootstrap Hapi Server Plugins, passes the server object to the plugins
-require('./server/config/plugins')(server);
+// Bootstrap Hapi Server Plugins
+require('./server/config/plugins');
 
-// Require the routes and pass the server object.
-var routes = require('./server/config/routes')(server);
 // Add the server routes
-server.route(routes);
+server.route(require('./server/config/routes'));
 
 //Start the server
 server.start(function() {
