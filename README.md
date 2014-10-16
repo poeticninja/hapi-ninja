@@ -11,7 +11,7 @@ Create a base boilerplate example showing how easy it is to get started with Hap
 [http://nodejs.org/](http://nodejs.org/)
 
 **Hapi** - A very well designed server framework that is easy to understand, easy to create your own plugins, scales very well, cache options built in, and more.
-[http://spumko.github.io/](http://spumko.github.io/)
+[http://hapijs.com/](http://hapijs.com/)
 
 **Swig** - It looks like HTML, it's very fast, great for template inheritance, and allows you to use HTML syntax with the server and with front-end client Javascript includes.
 [http://paularmstrong.github.io/swig/](http://paularmstrong.github.io/swig/docs/#browser)
