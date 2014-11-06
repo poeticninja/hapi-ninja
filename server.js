@@ -5,7 +5,15 @@ var Hapi = require('hapi'),
     config = require('./server/config/settings');
 
 // Create a server with a host, port, and options
-var server = Hapi.createServer('0.0.0.0', config.port, config.hapi.options);
+var server = Hapi.createServer('0.0.0.0', config.port);
+
+// Setup the views engine and folder
+server.views({
+    engines: {
+        html: require('swig')
+    },
+    path: './server/views'
+});
 
 // Export the server to be required elsewhere.
 module.exports = server;
