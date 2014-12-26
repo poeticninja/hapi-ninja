@@ -7,9 +7,7 @@ module.exports = {
                 title: 'Awesome Boilerplate Homepage'
             });
         },
-        app: {
-            name: 'index'
-        }
+        id: 'index'
     },
     about: {
         handler: function(request, reply){
@@ -17,9 +15,7 @@ module.exports = {
                 title: 'Super Informative About Page'
             });
         },
-        app: {
-            name: 'about'
-        }
+        id: 'about'
     },
     missing: {
         handler: function(request, reply){
@@ -27,8 +23,6 @@ module.exports = {
                 title: 'Total Bummer 404 Page'
             }).code(404);
         },
-        app: {
-            name: '404'
-        }
+        id: '404'
     }
 }

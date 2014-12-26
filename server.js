@@ -4,8 +4,11 @@
 var Hapi = require('hapi'),
     config = require('./server/config/settings');
 
-// Create a server with a host, port, and options
-var server = Hapi.createServer('0.0.0.0', config.port);
+// Create a new server
+var server = new Hapi.Server();
+
+// Setup the server with a host and port
+server.connection({host: config.host, port: config.port});
 
 // Setup the views engine and folder
 server.views({

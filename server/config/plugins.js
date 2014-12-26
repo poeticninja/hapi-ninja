@@ -4,28 +4,35 @@ var settings = require('./settings'),
 
 // Options to pass into the 'Good' plugin
 var goodOptions = {
-    subscribers: {
-        console: ['ops', 'request', 'log', 'error']
-    }
+    opsInterval: 5000,
+    reporters: [{
+        reporter: require('good-console'),
+        args:[{ ops: '*', request: '*', log: '*', response: '*', 'error': '*' }]
+    }]
 };
+
 // The Assets Configuaration Options
 var assetOptions = require(settings.rootPath + '/assets');
 
-server.pack.register([
+// load multiple plugins
+server.register([
     {
-        plugin: require("good"),
+        register: require("good"),
         options: goodOptions
     },
     {
-        plugin: require("hapi-assets"),
+        register: require("hapi-assets"),
         options: assetOptions
     },
     {
-        plugin: require("hapi-named-routes")
+        register: require("hapi-named-routes")
     },
     {
-        plugin: require("hapi-cache-buster")
+        register: require("hapi-cache-buster")
     }
-], function(err) {
-    if (err) throw err;
+], function (err) {
+    if (err) {
+        console.error('Failed to load a plugin:', err);
+        throw err;
+    }
 });
