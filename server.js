@@ -23,13 +23,11 @@ server.views({
 // Export the server to be required elsewhere.
 module.exports = server;
 
-// Add the server routes
-server.route(require('./server.routes.js'));
-
-
-// Load all plugins and then start the server.
-// First: community/npm plugins are loaded
-// Second: project specific plugins are loaded
+/*
+    Load all plugins and then start the server.
+    First: community/npm plugins are loaded
+    Second: project specific plugins are loaded
+ */
 server.register([
     {
         register: require("good"),
@@ -50,6 +48,21 @@ server.register([
     },
     {
         register: require("hapi-cache-buster")
+    },
+    {
+      register: require('./server/assets/index.js')
+    },
+    {
+      register: require('./server/base/index.js')
+    },
+    {
+      register: require('./server/database/index.js')
+    },
+    {
+      register: require('./server/auth/index.js')
+    },
+    {
+      register: require('./server/email/index.js')
     }
 ], function () {
     //Start the server
