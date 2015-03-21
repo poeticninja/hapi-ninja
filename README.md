@@ -81,8 +81,6 @@ By having the front-end folder and server side folder be specific, it provides f
 
 Projects that use hapi-ninja as a base.
 
-- [Hapi Dash](https://github.com/smaxwellstewart/hapi-dash) - Boilerplate Hapi Web and API Server Example, with frontend dashboard.
-
 ## Contributers
 
 [Saul Maddox](https://github.com/poeticninja),

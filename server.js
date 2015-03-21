@@ -50,19 +50,16 @@ server.register([
         register: require("hapi-cache-buster")
     },
     {
-      register: require('./server/assets/index.js')
+        register: require('./server/assets/index.js')
     },
     {
-      register: require('./server/base/index.js')
+      requireegister: require('./server/base/index.js')
     },
     {
-      register: require('./server/database/index.js')
+        register: require('./server/database/index.js')
     },
     {
-      register: require('./server/auth/index.js')
-    },
-    {
-      register: require('./server/email/index.js')
+        register: require('./server/notifications/index.js')
     }
 ], function () {
     //Start the server
