@@ -53,13 +53,7 @@ server.register([
         register: require('./server/assets/index.js')
     },
     {
-      requireegister: require('./server/base/index.js')
-    },
-    {
-        register: require('./server/database/index.js')
-    },
-    {
-        register: require('./server/notifications/index.js')
+      register: require('./server/base/index.js')
     }
 ], function () {
     //Start the server
