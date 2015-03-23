@@ -77,14 +77,9 @@ There are two main folders in the stack. The "**public**" folder for front-end (
 
 By having the front-end folder and server side folder be specific, it provides for better consistency when changing projects. This way when you change from a full front-end app (Phonegap), to a front-end and server side app you get to keep the same folder structure. Allowing for better consistency with your stack, projects, and tools.
 
-## Community Projects
-
-Projects that use hapi-ninja as a base.
-
 ## Contributers
 
-[Saul Maddox](https://github.com/poeticninja),
-You?
+[See the awesome people!](https://github.com/poeticninja/hapi-ninja/graphs/contributors)
 
 ## Credits
 Credit goes to all of the open source code that people have made available.
