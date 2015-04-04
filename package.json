@@ -1,7 +1,7 @@
 {
   "name": "hapi-ninja",
   "description": "Boilerplate Hapi server example. Node.js, Hapi, and Swig.",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "author": "Saul Maddox",
   "private": false,
   "repository": {
@@ -22,9 +22,8 @@
     "good-console": "^4.0.0",
     "hapi": "^8.0.0",
     "hapi-assets": "~0.3.0",
-    "hapi-cache-buster": "~0.3.0",
+    "hapi-cache-buster": "~0.4.0",
     "hapi-named-routes": "~0.3.0",
-    "require-directory": "~2.0.0",
     "swig": "~1.4.2"
   },
   "devDependencies": {
